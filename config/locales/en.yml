@@ -1,0 +1,9 @@
+en:
+  general:
+    greeting:
+      morning: 'Good Morning.'
+      hello: 'Hello, %{name}!'
+
+  result:
+    one: "only one"
+    other: "%{count} rows"
