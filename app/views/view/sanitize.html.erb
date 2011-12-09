@@ -1,0 +1,7 @@
+<% msg = <<EOL
+<p style="color:Red">Railsについて<br />質問があります。</p>
+<strong>至急</strong>
+<a href="JavaScript:alert('NG')">こちらに回答お願いします。</a>
+EOL
+%>
+<%= sanitize msg, :tags => %w(br p a), :attributes => %w(id class href) %>

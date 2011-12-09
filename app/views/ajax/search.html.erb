@@ -1,0 +1,7 @@
+<%= form_tag({ :action => 'result' }, { :remote => true }) do %>
+  <%= select_tag('publish', options_from_collection_for_select(
+    @books, :publish, :publish, '技術評論社')) %>
+  <%= submit_tag '検索' %>
+  <span id="progress"></span>
+<% end %>
+<div id="result"></div>

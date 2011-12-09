@@ -1,0 +1,10 @@
+<%= link_to('サポートサイト', 'http://www.wings.msn.to/') %><br />
+
+<%= link_to('トップ', { :controller => 'hello', :action => 'index' },
+  { :id => 'link', :class => 'menu' }) %><br />
+
+<%= link_to '削除', book_path(1),
+  {:confirm => '削除しても良いですか？', :method => :delete } %><br />
+
+<%= link_to('トップ', :controller => 'hello', :action => 'index',
+  :id => 'link', :class => 'menu') %><br />

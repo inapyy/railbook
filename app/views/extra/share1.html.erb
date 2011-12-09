@@ -1,0 +1,12 @@
+現在時刻（キャッシュなし）：<%= Time.now %><br />
+<% cache(:controller => 'shared', :action => 'time') do %>
+現在時刻（キャッシュあり）：<%= Time.now %><br />
+<% end %>
+
+<%
+=begin
+%>
+<%= render 'share' %>
+<%
+=end
+%>

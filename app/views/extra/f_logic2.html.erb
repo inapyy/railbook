@@ -1,0 +1,9 @@
+現在時刻：<%= Time.now %><br />
+<% cache(:controller => 'extra', :action => 'f_logic2') do %>
+  <% @books = Book.all %>
+  <ul>
+  <% @books.each do |b| %>
+    <li><%= b.title %></li>
+  <% end %>
+  </ul>
+<% end %>

@@ -1,0 +1,19 @@
+<div id="list">
+  <%= render :partial => 'books/book', :collection => @books,
+    :locals => { :type => :details } %>
+<%
+=begin
+%>
+  <%= render :partial => @books, :locals => { :type => :details } %>
+<%
+=end
+%>
+
+<%
+=begin
+%>
+  <%= render @books %>
+<%
+=end
+%>
+</div>

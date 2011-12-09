@@ -1,0 +1,14 @@
+現在時刻（キャッシュなし）：<%= Time.now %><br />
+
+<% cache do %>
+<%
+=begin
+%>
+<% cache(:suffix => 'footer') do %>
+<% cache(:controller => 'cache', :action => 'f_logic') do %>
+<% cache(:controller => 'shared', :action => 'time', :id => 'current') do %>
+<%
+=end
+%>
+現在時刻（キャッシュあり）：<%= Time.now %><br />
+<% end %>

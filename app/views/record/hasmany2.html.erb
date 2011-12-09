@@ -1,0 +1,7 @@
+<h2>「<%= @author.name %>」へのコメント</h2>
+<hr />
+<ul>
+<% @author.comments.each do |comment| %>
+<li><%= comment.body %>（<%= comment.name %>）</li>
+<% end %>
+</ul>

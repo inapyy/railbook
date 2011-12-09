@@ -1,0 +1,23 @@
+<%= @user.username %>さま
+
+この度は、本サイトへユーザ登録をいただきましてありがとうございました。
+以下は、登録いただいたユーザ情報です。
+
+ユーザ名：<%= @user.username %>
+パスワード：（セキュリティ保護のため、伏せています）
+メールアドレス：<%= @user.email %>
+
+サイトをご利用いただくには、以下のページからログインを行ってください。
+<%= url_for(:host => 'www.example.com', :controller => 'books',
+  :action => 'index') %>
+
+<%
+=begin
+%>
+<%= url_for(:controller => 'books', :action => 'index',
+  :only_path => false) %>
+<%
+=end
+%>
+
+「サーバサイド技術の学び舎」事務局（webmaster@wings.msn.to）

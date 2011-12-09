@@ -1,0 +1,7 @@
+<% msg = 'サポートサイトは http://www.wings.msn.to/ です。誤字脱字のご連絡は webmaster@wings.msn.to までお願いします' %>
+
+<%= auto_link(msg) %><br />
+<%= auto_link(msg, :link => :urls, :html => { :target => '_brank' }) %><br />
+<%= auto_link(msg, :link => :urls) do |text|
+  text + image_tag('outlink.gif', :height => 10, :width => 10)
+end %>

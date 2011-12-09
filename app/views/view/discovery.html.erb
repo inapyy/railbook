@@ -1,0 +1,16 @@
+<%= auto_discovery_link_tag(:rss,
+  { :controller => 'books', :action => 'index', :id => 'rails' },
+  { :title => 'サーバサイドの学び舎 - WINGS -'}
+) %>
+
+
+<%
+=begin
+%>
+<%= auto_discovery_link_tag(:rss,
+  'http://www.wings.msn.to/contents/rss.php',
+  { :title => 'サーバサイドの学び舎 - WINGS -'}
+) %>
+<%
+=end
+%>

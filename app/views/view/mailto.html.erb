@@ -1,0 +1,7 @@
+<%= mail_to('CQW15204@nifty.com') %><br />
+
+<%= mail_to('CQW15204@nifty.com', 'お問い合わせはこちら') %><br />
+
+<%= mail_to('CQW15204@nifty.com', nil,
+  { :replace_at => 'アット', :replace_dot => ' ', :subject => '問い合わせ',
+    :cc => 'yamada@wings.msn.to' }) %>

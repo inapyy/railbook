@@ -1,0 +1,5 @@
+<ul>
+<% @body['ResultSet']['Result'].each do |result| %>
+  <li><%= link_to result['Title'], result['Url'] %></li>
+<% end %>
+</ul>

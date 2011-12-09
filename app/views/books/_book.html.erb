@@ -1,0 +1,26 @@
+<p>
+<img src="http://www.wings.msn.to/books/<%= @book.isbn%>/<%= @book.isbn%>_logo.jpg" width="80" height="30" /><br />
+<%= @book.title %><br />
+<%= @book.publish %>/発行<br />
+定価 <%= @book.price %>円（税込）<br />
+ISBN <%= @book.isbn %><br />
+発刊日： <%= @book.published %>
+</p>
+
+<%
+=begin
+%>
+<p>
+<% type = :details if type.nil? %>
+<% if type == :details %>
+<img src="http://www.wings.msn.to/books/<%= book.isbn%>/<%= book.isbn%>_logo.jpg" width="80" height="30" /><br />
+<% end %>
+<%= book.title %><br />
+<%= book.publish %>/発行<br />
+定価 <%= book.price %>円（税込）<br />
+ISBN <%= book.isbn %><br />
+発刊日： <%= book.published %>
+</p>
+<%
+=end
+%>
